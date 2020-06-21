@@ -1,0 +1,3 @@
+{"level":"DEBUG","time":"2020-06-21T23:10:31.392+0800","caller":"web_app/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2020-06-21T23:10:34.656+0800","caller":"web_app/main.go:73","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-06-21T23:10:34.656+0800","caller":"web_app/main.go:82","msg":"Server exiting"}
