@@ -1,0 +1,3 @@
+{"level":"INFO","time":"2020-07-05T22:31:19.640+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-05T23:25:10.107+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-07T23:38:02.639+0800","caller":"logger/logger.go:34","msg":"init logger success"}

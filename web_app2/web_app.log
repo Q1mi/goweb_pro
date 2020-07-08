@@ -1,0 +1,43 @@
+{"level":"DEBUG","time":"2020-06-21T23:10:31.392+0800","caller":"web_app/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2020-06-21T23:10:34.656+0800","caller":"web_app/main.go:73","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-06-21T23:10:34.656+0800","caller":"web_app/main.go:82","msg":"Server exiting"}
+{"level":"DEBUG","time":"2020-06-27T18:59:55.926+0800","caller":"web_app2/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2020-06-27T19:02:44.428+0800","caller":"web_app2/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-06-27T19:02:44.434+0800","caller":"web_app2/main.go:80","msg":"Server exiting"}
+{"level":"DEBUG","time":"2020-06-27T19:04:30.702+0800","caller":"web_app2/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2020-06-28T14:28:42.403+0800","caller":"web_app2/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-06-28T14:28:42.406+0800","caller":"web_app2/main.go:80","msg":"Server exiting"}
+{"level":"DEBUG","time":"2020-06-28T14:28:48.961+0800","caller":"web_app2/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2020-06-28T14:29:40.715+0800","caller":"web_app2/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-06-28T14:29:40.716+0800","caller":"web_app2/main.go:80","msg":"Server exiting"}
+{"level":"DEBUG","time":"2020-06-28T14:29:44.049+0800","caller":"web_app2/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2020-06-28T14:31:28.396+0800","caller":"web_app2/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-06-28T14:31:28.396+0800","caller":"web_app2/main.go:80","msg":"Server exiting"}
+{"level":"DEBUG","time":"2020-06-28T14:32:05.018+0800","caller":"web_app2/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2020-06-28T14:32:36.498+0800","caller":"web_app2/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-06-28T14:32:36.498+0800","caller":"web_app2/main.go:81","msg":"Server exiting"}
+{"level":"DEBUG","time":"2020-06-28T14:32:39.505+0800","caller":"web_app2/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2020-06-28T14:32:56.237+0800","caller":"logger/logger.go:70","msg":"/version","status":200,"method":"GET","path":"/version","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36","errors":"","cost":0.000180251}
+{"level":"INFO","time":"2020-06-28T14:33:03.781+0800","caller":"logger/logger.go:70","msg":"/version","status":200,"method":"GET","path":"/version","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36","errors":"","cost":0.00000732}
+{"level":"INFO","time":"2020-06-28T14:35:17.588+0800","caller":"logger/logger.go:70","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","cost":0.000041179}
+{"level":"INFO","time":"2020-06-28T16:12:06.483+0800","caller":"web_app2/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-06-28T16:12:06.483+0800","caller":"web_app2/main.go:81","msg":"Server exiting"}
+{"level":"DEBUG","time":"2020-07-05T15:27:09.095+0800","caller":"web_app2/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2020-07-05T15:27:52.438+0800","caller":"logger/logger.go:70","msg":"/version","status":200,"method":"GET","path":"/version","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","cost":0.000263102}
+{"level":"INFO","time":"2020-07-05T15:28:03.383+0800","caller":"logger/logger.go:70","msg":"/version","status":200,"method":"GET","path":"/version","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","cost":0.000014336}
+{"level":"INFO","time":"2020-07-05T15:28:15.740+0800","caller":"web_app2/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-07-05T15:28:15.740+0800","caller":"web_app2/main.go:81","msg":"Server exiting"}
+{"level":"DEBUG","time":"2020-07-05T15:57:13.606+0800","caller":"web_app2/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2020-07-05T15:57:30.750+0800","caller":"web_app2/main.go:74","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-07-05T15:57:30.750+0800","caller":"web_app2/main.go:83","msg":"Server exiting"}
+{"level":"DEBUG","time":"2020-07-05T15:59:15.650+0800","caller":"web_app2/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2020-07-05T15:59:16.783+0800","caller":"web_app2/main.go:74","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-07-05T15:59:16.783+0800","caller":"web_app2/main.go:83","msg":"Server exiting"}
+{"level":"DEBUG","time":"2020-07-05T15:59:39.674+0800","caller":"web_app2/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2020-07-05T15:59:41.256+0800","caller":"web_app2/main.go:74","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-07-05T15:59:41.257+0800","caller":"web_app2/main.go:83","msg":"Server exiting"}
+{"level":"DEBUG","time":"2020-07-05T16:02:31.707+0800","caller":"web_app2/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2020-07-05T16:02:41.293+0800","caller":"logger/logger.go:70","msg":"/version","status":200,"method":"GET","path":"/version","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","cost":0.000096536}
+{"level":"INFO","time":"2020-07-05T16:02:54.430+0800","caller":"logger/logger.go:70","msg":"/version","status":200,"method":"GET","path":"/version","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","cost":0.000014329}
+{"level":"INFO","time":"2020-07-05T17:25:52.471+0800","caller":"web_app2/main.go:74","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2020-07-05T17:25:52.471+0800","caller":"web_app2/main.go:83","msg":"Server exiting"}
