@@ -1,3 +1,86 @@
 {"level":"INFO","time":"2020-07-05T22:31:19.640+0800","caller":"logger/logger.go:34","msg":"init logger success"}
 {"level":"INFO","time":"2020-07-05T23:25:10.107+0800","caller":"logger/logger.go:34","msg":"init logger success"}
 {"level":"INFO","time":"2020-07-07T23:38:02.639+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-12T18:05:21.095+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-12T18:05:32.042+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000456371}
+{"level":"INFO","time":"2020-07-12T18:05:50.136+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000082205}
+{"level":"ERROR","time":"2020-07-12T18:06:02.315+0800","caller":"controller/user.go:20","msg":"SignUp with invalid param","error":"json: cannot unmarshal number into Go struct field ParamSignUp.password of type string"}
+{"level":"INFO","time":"2020-07-12T18:06:02.315+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000103734}
+{"level":"INFO","time":"2020-07-12T18:08:53.472+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T18:09:02.430+0800","caller":"controller/user.go:28","msg":"SignUp with invalid param"}
+{"level":"INFO","time":"2020-07-12T18:09:02.431+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000604823}
+{"level":"INFO","time":"2020-07-12T18:31:22.734+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T18:31:29.576+0800","caller":"controller/user.go:20","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2020-07-12T18:31:29.576+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000423201}
+{"level":"INFO","time":"2020-07-12T18:32:25.740+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T18:32:30.313+0800","caller":"controller/user.go:20","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2020-07-12T18:32:30.313+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000661235}
+{"level":"INFO","time":"2020-07-12T18:41:26.874+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T18:41:30.271+0800","caller":"controller/user.go:22","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2020-07-12T18:41:30.271+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000353759}
+{"level":"ERROR","time":"2020-07-12T18:41:52.481+0800","caller":"controller/user.go:22","msg":"SignUp with invalid param","error":"invalid character '}' looking for beginning of object key string"}
+{"level":"INFO","time":"2020-07-12T18:41:52.481+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000170863}
+{"level":"ERROR","time":"2020-07-12T18:41:56.444+0800","caller":"controller/user.go:22","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.Password' Error:Field validation for 'Password' failed on the 'required' tag"}
+{"level":"INFO","time":"2020-07-12T18:41:56.444+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000181056}
+{"level":"INFO","time":"2020-07-12T18:43:14.991+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T18:43:21.743+0800","caller":"controller/user.go:22","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'required' tag"}
+{"level":"INFO","time":"2020-07-12T18:43:21.743+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000385142}
+{"level":"INFO","time":"2020-07-12T18:45:00.556+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T18:45:05.068+0800","caller":"controller/user.go:22","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'required' tag"}
+{"level":"INFO","time":"2020-07-12T18:45:05.068+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000349622}
+{"level":"INFO","time":"2020-07-12T18:45:24.480+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000070737}
+{"level":"INFO","time":"2020-07-12T18:46:11.962+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T18:46:18.441+0800","caller":"controller/user.go:22","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2020-07-12T18:46:18.441+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000376139}
+{"level":"INFO","time":"2020-07-12T18:47:53.960+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T18:48:00.693+0800","caller":"controller/user.go:22","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag\nKey: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2020-07-12T18:48:00.693+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000522369}
+{"level":"INFO","time":"2020-07-12T20:48:36.474+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T20:48:47.949+0800","caller":"controller/user.go:21","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag\nKey: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2020-07-12T20:48:47.949+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000376922}
+{"level":"INFO","time":"2020-07-12T20:48:54.931+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.010404686}
+{"level":"INFO","time":"2020-07-12T20:49:37.631+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T20:49:40.450+0800","caller":"controller/user.go:37","msg":"logic.SignUp failed","error":"Error 1046: No database selected"}
+{"level":"INFO","time":"2020-07-12T20:49:40.451+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.002728367}
+{"level":"INFO","time":"2020-07-12T20:51:02.973+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T20:51:09.620+0800","caller":"controller/user.go:37","msg":"logic.SignUp failed","error":"Error 1046: No database selected"}
+{"level":"INFO","time":"2020-07-12T20:51:09.620+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.002744751}
+{"level":"INFO","time":"2020-07-12T20:52:50.307+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-12T20:53:08.734+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T20:53:12.364+0800","caller":"controller/user.go:37","msg":"logic.SignUp failed","error":"Error 1046: No database selected"}
+{"level":"INFO","time":"2020-07-12T20:53:12.364+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.003101904}
+{"level":"INFO","time":"2020-07-12T20:53:40.649+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T20:53:43.861+0800","caller":"controller/user.go:37","msg":"logic.SignUp failed","error":"Error 1046: No database selected"}
+{"level":"INFO","time":"2020-07-12T20:53:43.861+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.003366978}
+{"level":"INFO","time":"2020-07-12T20:54:30.227+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T20:54:33.019+0800","caller":"controller/user.go:37","msg":"logic.SignUp failed","error":"Error 1046: No database selected"}
+{"level":"INFO","time":"2020-07-12T20:54:33.019+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.00256915}
+{"level":"INFO","time":"2020-07-12T20:55:39.189+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T20:55:45.049+0800","caller":"controller/user.go:37","msg":"logic.SignUp failed","error":"Error 1046: No database selected"}
+{"level":"INFO","time":"2020-07-12T20:55:45.050+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.008721431}
+{"level":"INFO","time":"2020-07-12T21:00:22.952+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T21:00:30.539+0800","caller":"controller/user.go:37","msg":"logic.SignUp failed","error":"Error 1046: No database selected"}
+{"level":"INFO","time":"2020-07-12T21:00:30.540+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.002642222}
+{"level":"INFO","time":"2020-07-12T21:01:01.386+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-12T21:02:33.979+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T21:02:38.773+0800","caller":"controller/user.go:37","msg":"logic.SignUp failed","error":"Error 1046: No database selected"}
+{"level":"INFO","time":"2020-07-12T21:02:38.773+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.003703831}
+{"level":"INFO","time":"2020-07-12T21:03:48.841+0800","caller":"logger/logger.go:34","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-12T21:03:51.800+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.021547313}
+{"level":"ERROR","time":"2020-07-12T21:03:55.220+0800","caller":"controller/user.go:37","msg":"logic.SignUp failed","error":"用户已存在"}
+{"level":"INFO","time":"2020-07-12T21:03:55.221+0800","caller":"logger/logger.go:67","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.005267053}
+{"level":"INFO","time":"2020-07-12T21:37:23.495+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T21:37:37.948+0800","caller":"controller/user.go:21","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag\nKey: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2020-07-12T21:37:37.949+0800","caller":"logger/logger.go:78","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000394274}
+{"level":"INFO","time":"2020-07-12T21:38:27.927+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T21:38:31.725+0800","caller":"controller/user.go:21","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag\nKey: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2020-07-12T21:38:31.725+0800","caller":"logger/logger.go:78","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000385813}
+{"level":"INFO","time":"2020-07-12T21:39:28.156+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-12T21:40:38.426+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-12T21:40:55.640+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-12T22:03:05.005+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"ERROR","time":"2020-07-12T22:03:18.807+0800","caller":"controller/user.go:54","msg":"Login with invalid param","error":"Key: 'ParamLogin.password' Error:Field validation for 'password' failed on the 'required' tag"}
+{"level":"INFO","time":"2020-07-12T22:03:18.807+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000370541}
+{"level":"ERROR","time":"2020-07-12T22:03:29.063+0800","caller":"controller/user.go:70","msg":"logic.Login failed","error":"用户不存在"}
+{"level":"INFO","time":"2020-07-12T22:03:29.064+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.007448181}
+{"level":"INFO","time":"2020-07-12T22:03:34.465+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.004053114}
