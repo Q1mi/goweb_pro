@@ -110,3 +110,30 @@
 {"level":"INFO","time":"2020-07-19T23:17:32.316+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.005829028}
 {"level":"INFO","time":"2020-07-19T23:17:40.884+0800","caller":"logger/logger.go:78","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000068331}
 {"level":"INFO","time":"2020-07-19T23:17:47.626+0800","caller":"logger/logger.go:78","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.22.0","errors":"","cost":0.000116422}
+{"level":"INFO","time":"2020-07-26T18:15:30.467+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-26T18:21:00.425+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-26T18:25:01.393+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-26T18:36:32.661+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-26T23:55:00.573+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-26T23:55:50.021+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:05:32.935+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:19:47.529+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:20:36.544+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:21:15.289+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:21:38.528+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:21:54.458+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:22:17.193+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:23:51.631+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:24:44.476+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:25:04.888+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:25:27.141+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:26:15.202+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:27:33.889+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:30:09.544+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:30:20.183+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:30:40.539+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:30:52.097+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:30:58.898+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:35:24.875+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:35:44.867+0800","caller":"logger/logger.go:45","msg":"init logger success"}
+{"level":"INFO","time":"2020-07-27T00:36:34.277+0800","caller":"logger/logger.go:45","msg":"init logger success"}

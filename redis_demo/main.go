@@ -140,6 +140,118 @@ func watchDemo(){
 	}
 	fmt.Println("tx exec success")
 }
+
+// nilDemo 使用pipeline查询多个key时某个key有空值
+// 使用pipeline多次执行HGetAll 不会因为某个key没有值而出现err
+func nilDemo(){
+	rdb.HMSet("nilDemo:k1", map[string]interface{}{"name":"q1mi", "score":18})
+	rdb.HMSet("nilDemo:k3", map[string]interface{}{"name":"q1mi", "score":18})
+
+	pipeline := rdb.Pipeline()
+	pipeline.HGetAll("nilDemo:k1")
+	pipeline.HGetAll("nilDemo:k2")
+	pipeline.HGetAll("nilDemo:k3")
+	cmders, err := pipeline.Exec()
+	if err != nil {
+		fmt.Printf("nilDemo pipeline.Exec() failed, err:%v\n", err)
+		return
+	}
+	for _, cmder := range cmders{
+		fmt.Println(cmder == nil)
+		v, ok := cmder.(*redis.StringStringMapCmd)
+		if !ok{
+			fmt.Println("cmder.(*redis.StringStringMapCmd) failed")
+			continue
+		}
+		// 打印值
+		fmt.Println(v.Val())
+	}
+}
+
+
+
+// nilDemo2 使用pipeline查询多个key时某个key有空值
+// 使用pipeline多次执行 Get 会因为某个key没有值而出现redis.Nil的err
+func nilDemo2(){
+	rdb.Set("nilDemo2:k1", "v1", 0)
+	rdb.Set("nilDemo2:k3", "v3", 0)
+
+	pipeline := rdb.Pipeline()
+	pipeline.Get("nilDemo2:k1")
+	pipeline.Get("nilDemo2:k2")
+	pipeline.Get("nilDemo2:k3")
+	cmders, err := pipeline.Exec()
+	if err != nil {
+		fmt.Printf("nilDemo2 pipeline.Exec() failed, err:%v\n", err)
+		return
+	}
+	for _, cmder := range cmders{
+		fmt.Println(cmder == nil)
+		v, ok := cmder.(*redis.StringCmd)
+		if !ok{
+			fmt.Println("cmder.(*redis.StringCmd) failed")
+			continue
+		}
+		// 打印值
+		fmt.Println(v.Val())
+	}
+}
+
+// nilDemo3 使用pipeline查询多个key时某个key有空值
+// 使用pipeline多次执行 HGet 会因为某个key没有值而出现redis.Nil的err
+func nilDemo3(){
+	rdb.HMSet("nilDemo3:k1", map[string]interface{}{"name":"q1mi", "score":18})
+	rdb.HMSet("nilDemo3:k3", map[string]interface{}{"name":"q1mi", "score":18})
+
+	pipeline := rdb.Pipeline()
+	pipeline.HGet("nilDemo3:k1", "score")
+	pipeline.HGet("nilDemo3:k2", "score")
+	pipeline.HGet("nilDemo3:k3", "score")
+	cmders, err := pipeline.Exec()
+	if err != nil {
+		fmt.Printf("nilDemo3 pipeline.Exec() failed, err:%v\n", err)
+		return
+	}
+	for _, cmder := range cmders{
+		fmt.Println(cmder == nil)
+		v, ok := cmder.(*redis.StringCmd)
+		if !ok{
+			fmt.Println("cmder.(*redis.StringCmd) failed")
+			continue
+		}
+		// 打印值
+		fmt.Println(v.Val())
+	}
+}
+
+// nilDemo4 使用pipeline查询多个key中某个没有值的field
+// 使用pipeline多次执行 HGet 会因为某个field没有值而出现redis.Nil的err
+func nilDemo4(){
+	rdb.HMSet("nilDemo4:k1", map[string]interface{}{"name":"q1mi", "score":18})
+	rdb.HMSet("nilDemo4:k2", map[string]interface{}{"name":"q1mi"})
+	rdb.HMSet("nilDemo4:k3", map[string]interface{}{"name":"q1mi", "score":18})
+
+	pipeline := rdb.Pipeline()
+	pipeline.HGet("nilDemo4:k1", "score")
+	pipeline.HGet("nilDemo4:k2", "score")
+	pipeline.HGet("nilDemo4:k3", "score")
+	cmders, err := pipeline.Exec()
+	if err != nil && err != redis.Nil {
+		fmt.Printf("nilDemo4 pipeline.Exec() failed, err:%v\n", err)
+		return
+	}
+	for _, cmder := range cmders{
+		fmt.Println(cmder == nil)
+		v, ok := cmder.(*redis.StringCmd)
+		if !ok{
+			fmt.Println("cmder.(*redis.StringCmd) failed")
+			continue
+		}
+		// 打印值
+		fmt.Println(v.Val())
+	}
+}
+
 func main() {
 	if err := initClient();err!=nil{
 		fmt.Printf("init redis client failed, err:%v\n", err)
@@ -153,5 +265,9 @@ func main() {
 	//redisExample()
 	//hgetDemo()
 	//redisExample2()
-	watchDemo()
+	//watchDemo()
+	nilDemo()
+	nilDemo2()
+	nilDemo3()
+	nilDemo4()
 }

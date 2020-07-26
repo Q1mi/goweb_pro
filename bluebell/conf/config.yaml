@@ -1,6 +1,6 @@
 name: "bluebell"
 mode: "dev"
-port: 8080
+port: 8081
 version: "v0.0.1"
 start_time: "2020-07-01"
 machine_id: 1
