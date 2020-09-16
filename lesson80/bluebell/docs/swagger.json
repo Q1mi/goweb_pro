@@ -1,0 +1,177 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Go web开发进阶项目实战课程bluebell",
+        "title": "bluebell项目接口文档",
+        "contact": {
+            "name": "liwenzhou",
+            "url": "http://www.liwenzhou.com"
+        },
+        "license": {},
+        "version": "1.0"
+    },
+    "host": "127.0.0.1:8084",
+    "basePath": "/api/v1",
+    "paths": {
+        "/posts2": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "可按社区按时间或分数排序查询帖子列表接口",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "帖子相关接口(api分组展示使用的)"
+                ],
+                "summary": "升级版帖子列表接口",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Bearer JWT",
+                        "name": "Authorization",
+                        "in": "header",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "description": "可以为空",
+                        "name": "community_id",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "example": "score",
+                        "description": "排序依据",
+                        "name": "order",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "example": 1,
+                        "description": "页码",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "example": 10,
+                        "description": "每页数据量",
+                        "name": "size",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller._ResponsePostList"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "controller._ResponsePostList": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "description": "业务响应状态码",
+                    "type": "integer"
+                },
+                "data": {
+                    "description": "数据",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.ApiPostDetail"
+                    }
+                },
+                "message": {
+                    "description": "提示信息",
+                    "type": "string"
+                }
+            }
+        },
+        "models.ApiPostDetail": {
+            "type": "object",
+            "required": [
+                "community_id",
+                "content",
+                "title"
+            ],
+            "properties": {
+                "author_id": {
+                    "description": "作者id",
+                    "type": "integer"
+                },
+                "author_name": {
+                    "description": "作者",
+                    "type": "string"
+                },
+                "community_id": {
+                    "description": "社区id",
+                    "type": "integer"
+                },
+                "content": {
+                    "description": "帖子内容",
+                    "type": "string"
+                },
+                "create_time": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "introduction": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "status": {
+                    "description": "帖子状态",
+                    "type": "integer"
+                },
+                "title": {
+                    "description": "帖子标题",
+                    "type": "string"
+                },
+                "vote_num": {
+                    "description": "投票数",
+                    "type": "integer"
+                }
+            }
+        },
+        "models.ParamPostList": {
+            "type": "object",
+            "properties": {
+                "community_id": {
+                    "description": "可以为空",
+                    "type": "integer"
+                },
+                "order": {
+                    "description": "排序依据",
+                    "type": "string",
+                    "example": "score"
+                },
+                "page": {
+                    "description": "页码",
+                    "type": "integer",
+                    "example": 1
+                },
+                "size": {
+                    "description": "每页数据量",
+                    "type": "integer",
+                    "example": 10
+                }
+            }
+        }
+    }
+}
