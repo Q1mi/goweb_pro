@@ -7,7 +7,7 @@
 
 ## 视频课程地址
 
-[网易云课堂课程连接](https://study.163.com/course/courseMain.htm?courseId=1210171207&share=2&shareId=480000002229610)
-[51CTO课程链接](https://edu.51cto.com/sd/68c23)
+- [网易云课堂课程连接](https://study.163.com/course/courseMain.htm?courseId=1210171207&share=2&shareId=480000002229610)
+- [51CTO课程链接](https://edu.51cto.com/sd/68c23)
 
 
