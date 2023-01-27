@@ -1,11 +1,15 @@
 package redis
 
 import (
-	"bluebell/setting"
+	"context"
 	"fmt"
 
-	"github.com/go-redis/redis"
+	"github.com/go-redis/redis/v8"
+
+	"bluebell/setting"
 )
+
+// 实际生产环境下 context.Background() 按需替换
 
 var (
 	client *redis.Client
@@ -22,7 +26,7 @@ func Init(cfg *setting.RedisConfig) (err error) {
 		MinIdleConns: cfg.MinIdleConns,
 	})
 
-	_, err = client.Ping().Result()
+	_, err = client.Ping(context.Background()).Result()
 	if err != nil {
 		return err
 	}

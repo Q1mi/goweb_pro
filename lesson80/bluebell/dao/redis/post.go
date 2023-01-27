@@ -2,17 +2,18 @@ package redis
 
 import (
 	"bluebell/models"
+	"context"
 	"strconv"
 	"time"
 
-	"github.com/go-redis/redis"
+	"github.com/go-redis/redis/v8"
 )
 
 func getIDsFormKey(key string, page, size int64) ([]string, error) {
 	start := (page - 1) * size
 	end := start + size - 1
 	// 3. ZREVRANGE 按分数从大到小的顺序查询指定数量的元素
-	return client.ZRevRange(key, start, end).Result()
+	return client.ZRevRange(context.Background(), key, start, end).Result()
 }
 
 func GetPostIDsInOrder(p *models.ParamPostList) ([]string, error) {
@@ -39,9 +40,9 @@ func GetPostVoteData(ids []string) (data []int64, err error) {
 	pipeline := client.Pipeline()
 	for _, id := range ids {
 		key := getRedisKey(KeyPostVotedZSetPF + id)
-		pipeline.ZCount(key, "1", "1")
+		pipeline.ZCount(context.Background(), key, "1", "1")
 	}
-	cmders, err := pipeline.Exec()
+	cmders, err := pipeline.Exec(context.Background())
 	if err != nil {
 		return nil, err
 	}
@@ -69,14 +70,15 @@ func GetCommunityPostIDsInOrder(p *models.ParamPostList) ([]string, error) {
 
 	// 利用缓存key减少zinterstore执行的次数
 	key := orderKey + strconv.Itoa(int(p.CommunityID))
-	if client.Exists(key).Val() < 1 {
+	if client.Exists(context.Background(), key).Val() < 1 {
 		// 不存在，需要计算
 		pipeline := client.Pipeline()
-		pipeline.ZInterStore(key, redis.ZStore{
+		pipeline.ZInterStore(context.Background(), key, &redis.ZStore{
+			Keys:      []string{cKey, orderKey},
 			Aggregate: "MAX",
-		}, cKey, orderKey) // zinterstore 计算
-		pipeline.Expire(key, 60*time.Second) // 设置超时时间
-		_, err := pipeline.Exec()
+		}) // zinterstore 计算
+		pipeline.Expire(context.Background(), key, 60*time.Second) // 设置超时时间
+		_, err := pipeline.Exec(context.Background())
 		if err != nil {
 			return nil, err
 		}

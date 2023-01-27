@@ -39,7 +39,8 @@ func InsertUser(user *models.User) (err error) {
 func encryptPassword(oPassword string) string {
 	h := md5.New()
 	h.Write([]byte(secret))
-	return hex.EncodeToString(h.Sum([]byte(oPassword)))
+	h.Write([]byte(oPassword))
+	return hex.EncodeToString(h.Sum(nil))
 }
 
 func Login(user *models.User) (err error) {

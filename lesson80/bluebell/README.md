@@ -17,4 +17,24 @@
 1. 确保你的MySQL配置是正确的
 2. 确保你的Redis配置是正确的
 3. 可点击右上角自行注册测试账号
+
+
+
+## 常见错误
+如果本地编译遇到以下报错，请在终端执行 `go get -u golang.org/x/sys` 命令。
+```bash
+# golang.org/x/sys/unix
+../../../../learngo/pkg/mod/golang.org/x/sys@v0.0.0-20200905004654-be1d3432aa8f/unix/syscall_darwin.1_13.go:29:3: //go:linkname must refer to declared function or variable
+../../../../learngo/pkg/mod/golang.org/x/sys@v0.0.0-20200905004654-be1d3432aa8f/unix/zsyscall_darwin_amd64.1_13.go:27:3: //go:linkname must refer to declared function or variable
+../../../../learngo/pkg/mod/golang.org/x/sys@v0.0.0-20200905004654-be1d3432aa8f/unix/zsyscall_darwin_amd64.1_13.go:40:3: //go:linkname must refer to declared function or variable
+../../../../learngo/pkg/mod/golang.org/x/sys@v0.0.0-20200905004654-be1d3432aa8f/unix/zsyscall_darwin_amd64.go:28:3: //go:linkname must refer to declared function or variable
+../../../../learngo/pkg/mod/golang.org/x/sys@v0.0.0-20200905004654-be1d3432aa8f/unix/zsyscall_darwin_amd64.go:43:3: //go:linkname must refer to declared function or variable
+../../../../learngo/pkg/mod/golang.org/x/sys@v0.0.0-20200905004654-be1d3432aa8f/unix/zsyscall_darwin_amd64.go:59:3: //go:linkname must refer to declared function or variable
+../../../../learngo/pkg/mod/golang.org/x/sys@v0.0.0-20200905004654-be1d3432aa8f/unix/zsyscall_darwin_amd64.go:75:3: //go:linkname must refer to declared function or variable
+../../../../learngo/pkg/mod/golang.org/x/sys@v0.0.0-20200905004654-be1d3432aa8f/unix/zsyscall_darwin_amd64.go:90:3: //go:linkname must refer to declared function or variable
+../../../../learngo/pkg/mod/golang.org/x/sys@v0.0.0-20200905004654-be1d3432aa8f/unix/zsyscall_darwin_amd64.go:105:3: //go:linkname must refer to declared function or variable
+../../../../learngo/pkg/mod/golang.org/x/sys@v0.0.0-20200905004654-be1d3432aa8f/unix/zsyscall_darwin_amd64.go:121:3: //go:linkname must refer to declared function or variable
+../../../../learngo/pkg/mod/golang.org/x/sys@v0.0.0-20200905004654-be1d3432aa8f/unix/zsyscall_darwin_amd64.go:121:3: too many errors
+
+```
     
